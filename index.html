@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<!-- Omega Group Members
+		Wan Ammarul Arif bin Wan Jeffry		01DIP12F1072
+		Kunalkumar a/l Poobathy				01DIP12F1081
+		Praveen a/l Sukhumaran				01DIP12F1074
+		Ahmad Syafiq bin Anuar				01DIP12F1093
+		Muhd Fazli Amin bin Ahmed Nawawi	01DIP12F1069
+-->
+
+<html>
+<head>
+	<title>FP322</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+ 	<link rel="stylesheet" href="./script/jqm-icon-pack-fa.css" />				<!--This line is to call icon pack plug-in-->
+	<link rel="stylesheet" href="./script/MyTheme.css" />						<!--This line and below is to call custom theme-->
+	<link rel="stylesheet" href="./script/MyTheme.min.css" />
+	<link rel="stylesheet" href="./script/jquery.mobile-1.4.3.css" />
+	<link rel="stylesheet" href="./script/slider/jquery.bxslider.css"  />		<!--This line is to call slider image style -->
+	<link rel="stylesheet" href="./script/style.css" />							<!--This line is compilation of style -->
+	
+	<script src="./script/jquery-1.11.1.js"></script>
+	<script src="./script/jquery.mobile-1.4.3.min.js"></script>
+	<script src="./script/slider/jquery.bxslider.min.js"></script>
+
+<!--Script for slider plug-ins -->
+<script>
+
+
+$(document).ready(function(){
+	$('#slider').bxSlider({
+	mode: 'fade',
+	captions: true,
+	auto: true,
+	autoControls: true,
+	adaptiveHeight: true,
+	slideWidth: 740
+	});
+});
+
+	
+</script>	
+
+</head>
+
+<style>
+.bx-wrapper img {
+    margin: 0 auto;
+}
+</style>
+
+<body>
+<!-- Start of first page -->
+<div data-role="page" id="main" data-fullscreen="true" data-theme="b">
+
+
+	<div data-role="panel" id="search-panel" data-position="right" data-theme="b">
+		<div data-role="fieldcontain">
+			<input type="search" name="search-mini" id="search-mini" value=""   />
+		</div>
+	</div><!-- /panel -->
+
+
+<!-- Header for first page -->
+	<div data-role="header" data-position="fixed" >
+		<img src="picture/logo.png" align="left" height="60px" width="55px" />
+		<center><h3>HOME</h3></center>
+		<a href="#search-panel" id="search-link" class="ui-btn ui-btn-icon-notext ui-corner-all ui-icon-search ui-nodisc-icon ui-alt-icon ui-btn-right">Search</a>
+		<div data-role="navbar" data-iconpos="left">  <!-- Navigation Bar -->
+			<ul>
+				<li><a href="./introduction.html" data-icon="user-md">Introduction</a></li>
+				<li><a href="./contact.html" data-icon="info">Contact US</a></li>
+				<li><a href="./manual.html" data-icon="question-circle">Manual</a></li>
+			</ul>
+		</div>
+	</div>
+	<div data-role="content">
+		<div>
+			<ul id="slider" align="middle">
+				<li><img src="./picture/banner1.png" title="FP322 : Desktop Publishing" /></li>
+				<li><img src="./picture/banner2.png" title="Group Members" /></li>
+				<li><img src="./picture/banner3.png" /></li>
+			</ul>
+		</div>
+		<div>
+			<ul data-role="listview" class="ui-listview-outer" data-inset="true">
+				<li data-role="list-divider"><h1><center>CATEGORIES</center></h1></li>
+				<div data-role="collapsible-set">
+					<li data-role="collapsible" data-shadow="false" data-corners="false" data-iconpos="right" data-transition="slideup"><h2 class="ui-btn ui-icon-book ui-btn-icon-left" style=" text-indent: 2em;">Notes</h2>
+						<ul data-role="listview" data-shadow="false" data-inset="true" data-corners="false" >
+							<li><a href="./notes/chapter1.html">Chapter 1</a></li>
+							<li><a href="./notes/chapter2.html">Chapter 2</a></li>
+						</ul>
+					</li>
+					<li data-role="collapsible" data-shadow="false" data-corners="false" data-iconpos="right" data-transition="slideup"><h2 class="ui-btn ui-icon-video-camera ui-btn-icon-left" style=" text-indent: 2em;">Tutorial</h2>
+						<ul data-role="listview" data-shadow="false" data-inset="true" data-corners="false" >
+							<li><a href="./notes/tutorial.html#tuto1" rel="external">Tutorial 1 : Introduction to</br>Adobe Photoshop</a></li>
+							<li><a href="./notes/tutorial.html#tuto2" rel="external">Tutorial 2 : Introduction to</br>Adobe Illustrator</a></li>
+							<li><a href="./notes/tutorial.html#tuto3" rel="external">Tutorial 3 : Working With Text</a></li>
+							<li><a href="./notes/tutorial.html#tuto4" rel="external">Tutorial 4 : Creating a Swoosh</br>by Using Trim</a></li>
+							<li><a href="./notes/tutorial.html#tuto5" rel="external">Tutorial 5 : Creating a Simple</br>Cloud using Unite</a></li>
+							<li><a href="./notes/tutorial.html#tuto6" rel="external">Tutorial 6 : Creating a Simple</br>Rainbow using Warp</a></li>
+						</ul>
+					</li>
+				</div>
+				<li><a href="./gridlist.html" class="ui-btn ui-icon-list ui-btn-icon-left" style=" text-indent: 0.7em;" rel="external" >Excercise</a></li>
+				<li><a href="./link.html" class="ui-btn ui-icon-external-link ui-btn-icon-left" style=" text-indent: 0.7em;">URL</a></li>
+			</ul>
+		</div>
+	</div>
+	
+	<div data-role="footer">
+		<h4>Thank You	:) </h4>
+	</div>
+
+	
+	
+</div>
+</body>
+</html>

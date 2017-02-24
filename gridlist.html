@@ -1,0 +1,109 @@
+<html>
+<head>
+	<title>Options</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+ 	<link rel="stylesheet" href="./script/jqm-icon-pack-fa.css" />				<!--This line is to call icon pack plug-in-->
+	<link rel="stylesheet" href="./script/MyTheme.css" />						<!--This line and below is to call custom theme-->
+	<link rel="stylesheet" href="./script/MyTheme.min.css" />
+	<link rel="stylesheet" href="./script/jquery.mobile-1.4.3.css" />
+	<link rel="stylesheet" href="./script/slider/jquery.bxslider.css"  />		<!--This line is to call slider image style -->
+	<link rel="stylesheet" href="./script/style.css" />							<!--This line is compilation of style -->
+	<link rel="stylesheet" href="./script/css/reset.css"	 media="screen" type="text/css">
+    <link rel="stylesheet" href="./script/css/slickQuiz.css" media="screen" type="text/css">
+    <link rel="stylesheet" href="./script/css/master.css"	 media="screen" type="text/css">
+	
+	<script src="./script/jquery-1.11.1.js"></script>
+	<script src="./script/jquery.mobile-1.4.3.min.js"></script>
+	<script src="./script/slider/jquery.bxslider.min.js"></script>	
+</head>
+
+<body>
+<div data-role="page" data-theme="b" id="grid-index" class="my-page">
+    <div data-role="header">
+        <h1>Exercise</h1>
+        <a href="./" data-shadow="false" data-iconshadow="false" data-icon="carat-l" data-iconpos="notext" data-rel="back" data-ajax="false" rel="external">Back</a>
+    </div><!-- /header -->
+    <div role="main" class="ui-content">
+        <ul data-role="listview" data-inset="true">
+            <li><a href="#quiz">
+                <img src="./picture/quiz.png" class="ui-li-thumb">
+                <h2>Quiz</h2>
+                <p>Not ready enough? Quiz first!</p>
+                <p class="ui-li-aside">Quiz</p>
+            </a></li>
+            <li><a href="#test">
+                <img src="./picture/test.png" class="ui-li-thumb">
+                <h2>Test</h2>
+                <p>Ready?!! Lets have some test!</p>
+                <p class="ui-li-aside">Test</p>
+            </a></li>
+        </ul>
+    </div><!-- /content -->
+</div>
+
+<!-- Start of quiz page -->
+<div data-role="page" data-theme="b" id="quiz" >
+
+<!-- Header for quiz page -->
+	<div data-role="header" data-position="fixed" >
+		<img src="./picture/logo.png" align="left" height="60px" width="55px" />
+		<a href="./index.html" data-icon="home" class="ui-btn-right" rel="external">Home</a>
+		<h1>QUIZ</h1>
+			<div data-role="navbar" data-iconpos="left">  <!-- Navigation Bar -->
+			<ul>
+				<li><a href="./introduction.html" data-icon="user-md">Introduction</a></li>
+				<li><a href="./contact.html" data-icon="info">Contact US</a></li>
+				<li><a href="./manual.html" data-icon="question-circle">Manual</a></li>
+			</ul>
+			</div>
+	</div>
+<!-- Content for quiz page -->
+	<div data-role="content">
+		<p>Quiz contains 10 question for each topic.<br>
+		Please choose the topic that you want to answer.<br>
+		You will be given 10 minute for the quiz.<br>
+		You are not allowed to leave the pages when you started the quiz</p>
+		<center><div data-role="controlgroup" data-type="horizontal">
+			<a href="./exercise/quiz1.html#quiz-chap1" data-role="button" data-icon="i01" data-iconpos="right" rel="external">Chapter</a>
+			<a href="./exercise/quiz2.html#quiz-chap2" data-role="button" data-icon="i02" data-iconpos="right" rel="external">Chapter</a>
+		</div></center>
+	</div>
+<!-- Footer for quiz page -->
+	<div data-role="footer">
+		<h4>Thank You	:) </h4>
+	</div>
+</div>
+
+<!-- Start of test page -->
+<div data-role="page" data-theme="b" id="test" >
+
+<!-- Header for test page -->
+	<div data-role="header" data-position="fixed" >
+		<img src="./picture/logo.png" align="left" height="60px" width="55px" />
+		<a href="./index.html" data-icon="home" class="ui-btn-right" rel="external">Home</a>
+		<h1>TEST</h1>
+			<div data-role="navbar" data-iconpos="left">  <!-- Navigation Bar -->
+			<ul>
+				<li><a href="./introduction.html" data-icon="user-md">Introduction</a></li>
+				<li><a href="./contact.html" data-icon="info">Contact US</a></li>
+				<li><a href="./manual.html" data-icon="question-circle">Manual</a></li>
+			</ul>
+			</div>
+	</div>
+<!-- Content for test page -->
+	<div data-role="content">
+		<p>Test contains 30 question.<br>
+		You will be given 45 minute for the test.<br>
+		You are not allowed to leave the pages when you started the quiz</p>
+		<center><div data-role="controlgroup" data-type="horizontal">
+			<a href="./exercise/test.html#quesTest" data-role="button" data-icon="arrow-circle-o-right" data-iconpos="right" rel="external">Begin</a>
+		</div></center>
+	</div>
+<!-- Footer for test page -->
+	<div data-role="footer">
+		<h4>Thank You	:) </h4>
+	</div>
+</div>
+
+</body>
+</html>
